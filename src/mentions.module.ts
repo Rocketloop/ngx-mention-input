@@ -12,6 +12,9 @@ import { MentionsComponent } from "./mentions.component"
     ],
     imports: [
         CommonModule
+    ],
+    entryComponents: [
+        MentionsComponent
     ]
 })
 export class MentionsModule {

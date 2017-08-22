@@ -1,16 +1,17 @@
 import { Component, Input } from "@angular/core"
 
-interface MentionItem {
+export interface MentionItem {
     primary: string;
     secondary: string;
 }
 
 @Component({ 
     selector: "mentions",
-    templateUrl: "./mentions.component.html"
+    templateUrl: "./mentions.component.html",
+    styleUrls: ["./mentions.component.scss"]
 })
 export class MentionsComponent {
     @Input() items: MentionItem[];
-    @Input() triggerChar: any;
+    @Input() triggerChar: string;
     @Input() multiLine: boolean;
 }

@@ -1,4 +1,4 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { ExampleModule } from './example.module';
+import { MentionsModule } from '../src/mentions.module';
 
-platformBrowserDynamic().bootstrapModule(ExampleModule);
+platformBrowserDynamic().bootstrapModule(MentionsModule);
