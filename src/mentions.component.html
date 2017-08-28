@@ -3,8 +3,9 @@
 <div class="mentions-hidden">
     <ul class="mentions-list">
         <li *ngFor="let item of items">
-            <span class="mentions-list-primary">{{item.primary}}</span>
-            {{item.secondary}}
+            <img draggable="false" class="mentions-avatar" src="{{item.avatar}}">
+            <div class="mentions-list-primary">{{item.primary}}</div>
+            <div class="mentions-list-secondary">{{item.secondary}}</div>
         </li>
     </ul>
 </div>

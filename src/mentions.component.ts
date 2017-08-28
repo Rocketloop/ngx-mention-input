@@ -3,6 +3,7 @@ import { Component, Input } from "@angular/core"
 export interface MentionItem {
     primary: string;
     secondary: string;
+    avatar: string;
 }
 
 @Component({ 
