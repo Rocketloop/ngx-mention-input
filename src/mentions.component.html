@@ -1,0 +1,11 @@
+<div class="mentions-input" contenteditable="true"></div>
+
+<div class="mentions-hidden">
+    <ul class="mentions-list">
+        <li *ngFor="let item of items">
+            <img draggable="false" class="mentions-avatar" src="{{item.avatar}}">
+            <div class="mentions-list-primary">{{item.primary}}</div>
+            <div class="mentions-list-secondary">{{item.secondary}}</div>
+        </li>
+    </ul>
+</div>

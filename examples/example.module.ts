@@ -2,17 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { ExampleComponent } from './example.component';
-import { MentionsModule } from '../index';
+import { MentionsComponent } from '../src/mentions.component';
 
 @NgModule({
     declarations: [
-        ExampleComponent
+        ExampleComponent,
+        MentionsComponent
     ],
     imports: [
         BrowserModule,
-        MentionsModule
     ],
     providers: [],
-    bootstrap: [ExampleComponent]
+    bootstrap: [ExampleComponent],
+    entryComponents: []
 })
 export class ExampleModule { }
